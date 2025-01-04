@@ -3,9 +3,8 @@
 ## Environment Configuration
 
 Tested on the following environment:
-1. Arduino Application: `arduino-ide_2.1.1_Linux_64bit.AppImage`
-2. Operating System: Ubuntu 22.04.2 LTS
-
+1. Arduino Application: `arduino-ide_2.3.4_Linux_64bit.AppImage`
+2. Operating System: Ubuntu 24.04.1 LTS
 ## Installation Steps
 
 ### 1. Prepare the AppImage
@@ -16,8 +15,8 @@ Open the terminal and run the following commands:
 
 ```bash
 mkdir ~/Documents/Arduino
-mv ~/Downloads/arduino-ide_2.1.1_Linux_64bit.AppImage ~/Documents/Arduino
-sudo chmod +x ~/Documents/Arduino/arduino-ide_2.1.1_Linux_64bit.AppImage
+mv ~/Downloads/arduino-ide_22.3.4_Linux_64bit.AppImage ~/Documents/Arduino
+sudo chmod +x ~/Documents/Arduino/arduino-ide_2.3.4_Linux_64bit.AppImage
 sudo apt-get install fuse libfuse2
 ```
 
@@ -27,13 +26,13 @@ To debug any potential errors:
 
 1. Run the file to check for errors:
    ```bash
-   ./arduino-ide_2.1.1_Linux_64bit.AppImage
+   ./arduino-ide_2.3.4_Linux_64bit.AppImage
    ```
 2. If no errors occur, close the application through File → Exit
 
 3. Get the full path to the Arduino AppImage file:
    ```bash
-   realpath arduino-ide_2.1.1_Linux_64bit.AppImage
+   realpath arduino-ide_2.3.4_Linux_64bit.AppImage
    ```
    Example output:
    ```
@@ -54,8 +53,8 @@ To debug any potential errors:
    Type=Application
    Name=Arduino 2
    Comment=Arduino IDE 2
-   TryExec=/home/virtualbox/Documents/Arduino/arduino-ide_2.1.1_Linux_64bit.AppImage
-   Exec=/home/virtualbox/Documents/Arduino/arduino-ide_2.1.1_Linux_64bit.AppImage
+   TryExec=/home/virtualbox/Documents/Arduino/arduino-ide_2.3.4_Linux_64bit.AppImage
+   Exec=/home/virtualbox/Documents/Arduino/arduino-ide_2.3.4_Linux_64bit.AppImage
    #Icon=/home/virtualbox/Documents/Arduino/arduino.ico
    #Actions=Editor
    Categories=Utility;Application;Development;
